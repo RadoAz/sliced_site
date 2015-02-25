@@ -1,0 +1,14 @@
+header, banner, article, aside, footer, button {
+ display: block; 
+}
+
+html, body, p, h1, h2, h3, a, div, img, input {
+ margin: 0;
+ padding: 0;
+}
+
+@font-face {
+ font-family: 'Open_Sans';
+ src: url(../fonts/Open_Sans.ttf);
+}
+
