@@ -1,5 +1,6 @@
 header, banner, article, aside, footer, button {
- display: block; 
+  display: block; 
+  font-family: Arial;
 }
 
 html, body, p, h1, h2, h3, a, div, img, input {
@@ -8,7 +9,57 @@ html, body, p, h1, h2, h3, a, div, img, input {
 }
 
 @font-face {
- font-family: 'Open_Sans';
- src: url(../fonts/Open_Sans.ttf);
+ font-family: 'MyriadPro_Condensed';
+ src: url(../fonts/MutiadPro-Cond.otf);
 }
 
+p {
+  font-family: Arial, Verdana, sans-serif; 
+}
+
+body {
+  width: 100%; 
+}
+                                   /*BOOOOOOOODY CLOSED*/
+header {
+  width: 100%;
+  height: 103px;
+  background: url(../images/bgg.png) repeat-x;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
+.headerdiv {
+  padding: 10px auto; 
+  overflow: hidden;
+  width: 940px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none; 
+}
+
+header li {
+  float: left;
+  color: #ffffff;
+  font-size: 12px;
+  border-right: solid 1px #2d3135;
+  padding: 0 30px;
+  margin-top: -9px;
+  line-height: 65px;
+  vertical-align: middle;
+}
+
+header li:first-child {
+  margin-left: 30px; 
+}
+
+header img {
+  float: left; 
+}
+
+header a {
+  color: #ffffff;
+  text-decoration: none;
+}
