@@ -63,3 +63,9 @@ header a {
   color: #ffffff;
   text-decoration: none;
 }
+
+.active_button {
+  background-color: red;
+  border: 2px solid red;
+  border-radius: 5px;
+}
