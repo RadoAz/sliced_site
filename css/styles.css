@@ -65,7 +65,6 @@ header a {
 }
 
 .active_button {
-  background-color: red;
-  border: 2px solid red;
-  border-radius: 5px;
+  background: url(../images/active_bg.png) no-repeat;
+  background-position: 27px 17px; 
 }
