@@ -53,7 +53,8 @@ header li {
 }
 
 header li:first-child {
-  margin-left: 30px; 
+  margin-left: 30px;
+  padding: 0 10px;
 }
 
 header li:last-child {
@@ -70,8 +71,9 @@ header a {
 }
 
 .active_button {
-  background: url(../images/active_bg.png) no-repeat;
-  background-position: 25px 17px; 
+  padding: 8px 5px 8px 5px;
+  border-radius: 15px;
+  background-color: #f53600;
 }
 
                                    /*BAAAAAAANNNNNER STARTED*/
@@ -80,7 +82,8 @@ banner {
 }
 
 .bannerdiv {
-  width: 100%;
+  width: 1347px;
+  margin: 0 auto;
   height: 567px;
   background: url(../images/bridge_bg.jpg) no-repeat;
   position: relative;
@@ -99,7 +102,7 @@ banner {
 }
 
 .banner_ribbon_content {
-  width: 830px;
+  width: 840px;
   margin: 0 auto;
   overflow: hidden;
 }
