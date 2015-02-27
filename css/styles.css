@@ -316,4 +316,32 @@ cite {
 
 footer {
   clear: both; 
+  background: url(../images/footerbg.png) repeat;
+  border: 6px solid #cccccc;
+}
+
+.footer_container {
+  width: 948px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+.footer_box {
+  float: left;
+  width: 237px;
+  box-sizing: border-box;
+}
+
+.footer_box h2 {
+  border: none;
+  font-size: 20px;
+}
+
+.footer_box h3 {
+  font-size: 12px; 
+}
+
+.footer_box img {
+  float: left; 
 }
