@@ -33,50 +33,107 @@ header {
 }
 
 .headerdiv {
-  padding: 10px auto; 
-  overflow: hidden;
   width: 948px;
   margin: 0 auto;
-}
-
-ul {
-  list-style-type: none; 
-  overflow: hidden;
-  margin-left: 30px;
-}
-
-header li {
-  float: left;
-  color: #ffffff;
-  font-size: 11px;
-  border-right: solid 1px #2d3135;
-  padding: 0 30px;
-  margin-top: -9px;
-  line-height: 65px;
-  vertical-align: middle;
-}
-
-header li:first-child {
-  padding: 0 10px;
-}
-
-header li:last-child {
-  border: none; 
 }
 
 header img {
   float: left; 
 }
 
-header a {
-  color: #ffffff;
-  text-decoration: none;
+.headerdiv > ul {
+  list-style-type: none;
+  margin: 0 0 0 30px;
 }
 
-.active_button {
-  padding: 8px 5px 8px 5px;
+.headerdiv > ul > li {
+  float: left;
+  color: #ffffff;
+  font-size: 11px;
+  border-right: solid 1px #2d3135;
+  padding: 15px 5px 0;
+  height: 65px;
+  box-sizing: border-box;
+}
+
+.headerdiv > ul > li:last-child {
+  border: none; 
+}
+
+.headerdiv > ul > li.dropdown > a {
+  background-image: url(../images/menu_arr_down.png);
+  background-repeat: no-repeat;
+  background-position: 85% center;
+  padding-right: 30px;
+}
+
+.headerdiv > ul > li a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 20px;
   border-radius: 15px;
+}
+
+.headerdiv > ul > li.active a {
   background-color: #f53600;
+}
+
+header a:hover {
+  background-color: #24292d;
+}
+
+.headerdiv > ul > li.dropdown {
+  position: relative;
+}
+
+.headerdiv > ul > li.dropdown > a:hover + .line_menu_2 {
+  display: block;
+}
+
+.headerdiv > ul > li.dropdown .line_menu_2 {
+  width: 150px;
+  position: absolute;
+  top: 50px;
+  left: -18px;
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+  border-radius: 4px 4px 0 0;
+  border-top: red 8px solid;
+  display: none;
+}
+
+.headerdiv > ul > li.dropdown .line_menu_2:before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7px 7px 7px;
+  border-color: transparent transparent red transparent;
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  z-index: 1;
+  margin-left: -5px;
+}
+
+.headerdiv > ul > li.dropdown .line_menu_2 > li:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.headerdiv > ul > li.dropdown .line_menu_2 > li {
+  width: 150px;
+  padding: 15px 0;
+  background-color: #24292d;
+  position: relative;
+  top: -4px;
+}
+
+.headerdiv > ul > li.dropdown .line_menu_2 > li > a {
+  text-transform: uppercase;
+  text-align: center;
 }
 
                                    /*BAAAAAAANNNNNER STARTED*/
@@ -411,4 +468,3 @@ footer a {
   color: #7e7e7e; 
   line-height: 51px;
 }
-
