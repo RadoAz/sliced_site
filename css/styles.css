@@ -50,10 +50,28 @@ header img {
   float: left;
   color: #ffffff;
   font-size: 11px;
-  border-right: solid 1px #2d3135;
-  padding: 15px 5px 0;
-  height: 65px;
   box-sizing: border-box;
+  height: 30px;
+  text-align: center;
+  line-height: 14px;
+  border-radius: 15px;
+  margin: 20px 5px;
+  position: relative;  
+}
+
+.headerdiv > ul > li:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background-color: #2d3135;
+  display: block;
+  top: -7px;
+  left: -5px;
+}
+
+.headerdiv > ul > li:first-child:after {
+  display: none;
 }
 
 .headerdiv > ul > li:last-child {
@@ -75,27 +93,27 @@ header img {
   border-radius: 15px;
 }
 
-.headerdiv > ul > li.active a {
+.headerdiv > ul > li.active {
   background-color: #f53600;
 }
 
-header a:hover {
+.headerdiv > ul > li:hover {
   background-color: #24292d;
 }
 
-.headerdiv > ul > li.dropdown {
+/*.headerdiv > ul > li.dropdown {
   position: relative;
-}
+}*/
 
-.headerdiv > ul > li.dropdown > a:hover + .line_menu_2 {
+.headerdiv > ul > li.dropdown:hover .line_menu_2 {
   display: block;
 }
 
 .headerdiv > ul > li.dropdown .line_menu_2 {
   width: 150px;
   position: absolute;
-  top: 50px;
-  left: -18px;
+  top: 34px;
+  left: -26px;;
   list-style: none;
   padding: 0;
   z-index: 2;
