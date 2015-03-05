@@ -1,5 +1,5 @@
 header, banner, article, aside, footer, button {
-  display: block; 
+  display: block;
   font-family: Arial;
 }
 
@@ -14,13 +14,13 @@ html, body, p, h1, h2, h3, a, div, img, input {
 }
 
 p {
-  font-family: Arial, Verdana, sans-serif; 
+  font-family: Arial, Verdana, sans-serif;
   font-size: 12px;
   color: #69757f;
 }
 
 body {
-  width: 100%; 
+  width: 100%;
   background: url(../images/mainbg.png) repeat;
 }
                                    /*BOOOOOOOODY CLOSED*/
@@ -38,7 +38,7 @@ header {
 }
 
 header img {
-  float: left; 
+  float: left;
 }
 
 .headerdiv > ul {
@@ -48,15 +48,10 @@ header img {
 
 .headerdiv > ul > li {
   float: left;
-  color: #ffffff;
   font-size: 11px;
-  box-sizing: border-box;
-  height: 30px;
-  text-align: center;
   line-height: 14px;
-  border-radius: 15px;
   margin: 20px 5px;
-  position: relative;  
+  position: relative;
 }
 
 .headerdiv > ul > li:after {
@@ -75,7 +70,11 @@ header img {
 }
 
 .headerdiv > ul > li:last-child {
-  border: none; 
+  border: none;
+}
+
+.headerdiv > ul > li.dropdown {
+  height: 35px;
 }
 
 .headerdiv > ul > li.dropdown > a {
@@ -83,6 +82,10 @@ header img {
   background-repeat: no-repeat;
   background-position: 85% center;
   padding-right: 30px;
+}
+
+.headerdiv > ul > li.dropdown:hover > a {
+  background-color: #24292d;
 }
 
 .headerdiv > ul > li a {
@@ -93,17 +96,13 @@ header img {
   border-radius: 15px;
 }
 
-.headerdiv > ul > li.active {
-  background-color: #f53600;
-}
-
-.headerdiv > ul > li:hover {
+.headerdiv > ul > li > a:hover {
   background-color: #24292d;
 }
 
-/*.headerdiv > ul > li.dropdown {
-  position: relative;
-}*/
+.headerdiv > ul > li.active > a {
+  background-color: #f53600;
+}
 
 .headerdiv > ul > li.dropdown:hover .line_menu_2 {
   display: block;
@@ -186,11 +185,11 @@ banner {
 }
 
 .banner_ribbon_content p {
-  color: #ffffff; 
+  color: #ffffff;
 }
 
 .round_arrow_left, .round_arrow_right, .banner_ribbon h2, .banner_ribbon p {
-  float: left; 
+  float: left;
 }
 
 .round_arrow_left, .round_arrow_right {
@@ -211,17 +210,17 @@ h2 {
 }
 
 .banner_ribbon p {
-  font-size: 11px; 
+  font-size: 11px;
   line-height: 32px;
   margin-left: 40px;
 }
 
 .round_arrow_right {
-  margin-left: 70px; 
+  margin-left: 70px;
 }
 
 .banner_ribbon a, .red_arr {
-  color: #f53600; 
+  color: #f53600;
 }
 
                                    /*BAAAAAAANNNNNER CLOSED*/
@@ -238,7 +237,7 @@ main {
 }
 
 .round_arrow_left, .round_arrow_left, main hr, main h2  {
-  float: left; 
+  float: left;
 }
 
 main h2 {
@@ -255,11 +254,11 @@ main .round_arrow_right {
 }
 
 main .round_arrow_left {
-  margin-left: 19px; 
+  margin-left: 19px;
 }
 
 main hr {
-  width: 322px; 
+  width: 322px;
   margin-top: 16px;
 }
 
@@ -280,7 +279,7 @@ main hr {
   height: 204px;
   -webkit-box-shadow: 0px 6px 5px 0px rgba(125,125,125,1);
   -moz-box-shadow: 0px 6px 5px 0px rgba(125,125,125,1);
-  box-shadow: 0px 6px 5px 0px rgba(125,125,125,1); 
+  box-shadow: 0px 6px 5px 0px rgba(125,125,125,1);
 }
 
 .content_block h3 {
@@ -309,7 +308,7 @@ main hr {
 }
 
 .testimonials_container {
-  clear: both;  
+  clear: both;
   margin-top: 30px;
   box-sizing: border-box;
   overflow: hidden;
@@ -317,7 +316,7 @@ main hr {
 }
 
 .testim_left, .testim_rightbox {
-  float: left; 
+  float: left;
 }
 
 .testim_left {
@@ -345,7 +344,7 @@ main hr {
 }
 
 .cite_container {
-  float: left; 
+  float: left;
 }
 
 .circles_container {
@@ -354,7 +353,7 @@ main hr {
 }
 
 .cite_container img, cite {
-  float: left; 
+  float: left;
 }
 
 .cite_container img {
@@ -375,7 +374,7 @@ cite {
 }
 
 .red_text {
-  color: #d73406; 
+  color: #d73406;
 }
 
 .circles_container button {
@@ -388,16 +387,16 @@ cite {
 }
 
 .circles_container button:last-child {
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 .circles_container .active_round_button {
-  background-color: #f53600; 
+  background-color: #f53600;
 }
                                    /*MAAAAAAAAAIIIIN CLOSED*/
 
 footer {
-  clear: both; 
+  clear: both;
   background: url(../images/footerbg.png) repeat;
   border: 6px solid #cccccc;
 }
@@ -425,16 +424,16 @@ footer {
 }
 
 .footer_box h3 {
-  font-size: 12px; 
+  font-size: 12px;
 }
 
 .footer_box img {
-  float: left; 
+  float: left;
   margin-right: 20px;
 }
 
 .blogfootdiv {
-  padding-bottom: 30px; 
+  padding-bottom: 30px;
 }
 
 footer hr {
@@ -444,12 +443,12 @@ footer hr {
 }
 
 .blogfootdiv p {
-  margin-top: 20px; 
+  margin-top: 20px;
   font-size: 12px;
 }
 
 .needhr {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 .about_toptext {
@@ -457,7 +456,7 @@ footer hr {
   margin-bottom: 30px;
 }
 
-footer ul { 
+footer ul {
    margin: 0;
 }
 
@@ -475,14 +474,14 @@ footer a {
 }
 
 .soc_buttons: {
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .soc_buttons {
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .soc_buttons a {
-  color: #7e7e7e; 
+  color: #7e7e7e;
   line-height: 51px;
 }
