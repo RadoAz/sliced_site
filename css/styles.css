@@ -153,6 +153,24 @@ header img {
   text-align: center;
 }
 
+.line_menu_3 {
+  width: 150px;
+  position: absolute;
+  top: 15px;
+  left: -149px;
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+  border-radius: 4px 4px 0 0;
+  border-top: red 8px solid;
+  display: none;
+  z-index: 2;
+}
+
+.line_menu_3 li {
+  background-color: #24292d; 
+}
+
                                    /*BAAAAAAANNNNNER STARTED*/
 banner {
   width: 100%;
