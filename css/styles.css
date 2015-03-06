@@ -159,11 +159,17 @@ header img {
   background-color: red;
 }
 
+.dropdown2 > a {
+  background: url(../images/menu_arr_down.png) no-repeat;
+  background-position: 5px 12px;
+}
+
+
 .line_menu_3 {
   width: 150px;
   position: absolute;
-  top: 15px;
-  left: -149px;
+  top: 5px;
+  left: 3px;
   list-style: none;
   padding: 0;
   z-index: 2;
@@ -173,8 +179,35 @@ header img {
   z-index: 2;
 }
 
+.line_menu_3 li:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
 .line_menu_3 li {
   background-color: #24292d; 
+  top: -4px;
+  position: relative;
+  padding: 15px 0;
+}
+
+.dropdown2:hover .transparent_menu_div, .line_menu_3 {
+  display: block;
+}
+
+.line_menu_3 li a {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.transparent_menu_div {
+  position: absolute;
+  width: 157px;
+  height: 250px;
+  top: 15px;
+  left: -157px;
+  z-index: 3;
+  display: none;
 }
 
                                                                                /*BAAAAAAANNNNNER STARTED*/
