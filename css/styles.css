@@ -515,6 +515,7 @@ footer hr {
 
 footer ul {
    margin: 0;
+   list-style: none;
 }
 
 footer ul li {
