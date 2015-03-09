@@ -25,11 +25,11 @@ body {
 }
                                                                     /*BOOOOOOOODY CLOSED*/
 header {
-  width: 100%;
-  height: 103px;
   background: url(../images/bgg.png) repeat-x;
-  padding: 12px 0;
   box-sizing: border-box;
+  height: 103px;
+  padding: 12px 0;
+  width: 100%;
 }
 
 .headerdiv {
@@ -184,7 +184,7 @@ header img {
 }
 
 .line_menu_3 li {
-  background-color: #24292d; 
+  background-color: #24292d;
   top: -4px;
   position: relative;
   padding: 15px 0;
@@ -531,15 +531,33 @@ footer a {
   color: #24292d;
 }
 
-.soc_buttons: {
-  margin-top: 30px;
+.social {
+  list-style: none;
 }
 
-.soc_buttons {
-  overflow: hidden;
+.social > li {
+
 }
 
-.soc_buttons a {
-  color: #7e7e7e;
-  line-height: 51px;
+.twit, .rss, .google {
+  height: 50px;
+  padding-left: 78px;
+  padding-top: 16px;
+  display: inline-block;
+}
+
+.twit {
+  background: url(../images/twit_logo.gif) no-repeat;
+}
+
+.rss {
+  background: url(../images/rss_logo.gif) no-repeat;
+}
+
+.google {
+  background: url(../images/plus_logo.gif) no-repeat;
+}
+
+.social a {
+  display: block;
 }
