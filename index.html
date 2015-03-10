@@ -8,9 +8,9 @@
   </head>
   <body>
     <header>
-      <div class="headerdiv">
+      <div class="headerdiv clearfix linewidth">
         <img src="images/logo.gif">
-        <ul>
+        <ul class="clearfix">
           <li class="active"><a href="#">HOME</a></li>
           <li class="dropdown"><a href="#">COMPANY</a>
             <ul class="line_menu_2">
@@ -48,15 +48,15 @@
         </div>
       </div>
     </banner>     <!----BAAAAANNNEEEER CLOSED---------->
-    <main>
-      <div class="main_nav">
+    <main class="linewidth">
+      <div class="main_nav linewidth">
         <hr>
         <button class="round_arrow_left">&larr;</button>
         <h2>OUR PROJECTS</h2>
         <button class="round_arrow_right">&rarr;</button>
         <hr>
       </div>
-      <div class="contant_container">
+      <div class="contant_container clearfix">
         <div class="content_block">
           <img src="images/img_1_mid.gif">
           <h3>PROJECT NAME</h3>
@@ -90,7 +90,7 @@
           <button class="black_button">Read more&nbsp;&rarr;</button>
         </div>
       </div>
-      <div class="testimonials_container">
+      <div class="testimonials_container clearfix linewidth">
         <div class="testim_left">
           <h2>TESTIMONIALS</h2>
         </div>
@@ -100,16 +100,16 @@
             <cite>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do..."</cite>
             <p>Allan Smith <span class="red_text">USA</span></p>
           </div>
-          <div class="circles_container">
-            <button class="active_round_button"></button>
-            <button></button>
-            <button></button>
-          </div>
+          <ul class="circles_container">
+           <li> <button class="active_round_button"></button></li>
+           <li> <button></button></li>
+           <li> <button></button></li>
+          </ul>
         </div>
       </div>
     </main>       <!----MAAAAAAAAAAAAAAAAAIIIN CLOSED---------->
     <footer>
-      <div class="footer_container">
+      <div class="footer_container linewidth">
         <div class="footer_box">
           <h2>FROM THE BLOG</h2>
           <div class="blogfootdiv1">
@@ -129,7 +129,7 @@
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat                   cupidatat non proident, sunt in culpa qui officia deserunt </p>
         </div>
         <div class="footer_box">
-          <h2>CATEGORIES</h2>
+          <h2 style="margin-bottom:20px">CATEGORIES</h2>
           <ul>
             <li><a href="#">Lorem ipsum</a></li>
             <li><a href="#">Sit amet</a></li>

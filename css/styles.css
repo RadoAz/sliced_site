@@ -23,6 +23,19 @@ body {
   width: 100%;
   background: url(../images/mainbg.png) repeat;
 }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.linewidth {
+  width: 948px;
+}
                                                                     /*BOOOOOOOODY CLOSED*/
 header {
   background: url(../images/bgg.png) repeat-x;
@@ -33,7 +46,6 @@ header {
 }
 
 .headerdiv {
-  width: 948px;
   margin: 0 auto;
 }
 
@@ -216,7 +228,6 @@ banner {
 }
 
 .bannerdiv {
-  width: 1347px;
   margin: 0 auto;
   height: 567px;
   background: url(../images/bridge_bg.jpg) no-repeat;
@@ -245,8 +256,13 @@ banner {
   color: #ffffff;
 }
 
-.round_arrow_left, .round_arrow_right, .banner_ribbon h2, .banner_ribbon p {
+.round_arrow_left, .banner_ribbon h2, .banner_ribbon p {
   float: left;
+}
+
+.banner_ribbon_content > .round_arrow_right {
+  float: right;
+  margin: 0;
 }
 
 .round_arrow_left, .round_arrow_right {
@@ -262,7 +278,7 @@ h2 {
   font-family: 'MyriadPro_Condensed';
   font-size: 25px;
   letter-spacing: 1px;
-  padding: 5px 28px 0 70px;
+  padding: 5px 45px 0 70px;
   border-right: 1px solid #666564;
 }
 
@@ -283,14 +299,13 @@ h2 {
                                                                                             /*BAAAAAAANNNNNER CLOSED*/
                                                                                            /*MAAAAAAAAAIIIIN STARTENED*/
 main {
-  width: 948px;
   margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 75px;
 }
 
 .main_nav {
   overflow: hidden;
-  margin-top: 43px;
-  width: 948px;
 }
 
 .round_arrow_left, .round_arrow_left, main hr, main h2  {
@@ -308,6 +323,7 @@ main h2 {
 main .round_arrow_right {
   margin: 0;
   margin-right: 19px;
+  float: left;
 }
 
 main .round_arrow_left {
@@ -321,7 +337,6 @@ main hr {
 
 .contant_container {
   padding-top: 33px;;
-  overflow: hidden;
 }
 
 .content_block {
@@ -368,8 +383,6 @@ main hr {
   clear: both;
   margin-top: 30px;
   box-sizing: border-box;
-  overflow: hidden;
-  width: 948px;
 }
 
 .testim_left, .testim_rightbox {
@@ -406,7 +419,14 @@ main hr {
 
 .circles_container {
   float: right;
-  margin-top: 7px;
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.circles_container > li {
+  margin-bottom: 7px;
 }
 
 .cite_container img, cite {
@@ -440,7 +460,6 @@ cite {
   background-color: #393f45;
   border: none;
   border-radius: 7px;
-  margin-bottom: 7px;
 }
 
 .circles_container button:last-child {
@@ -459,7 +478,6 @@ footer {
 }
 
 .footer_container {
-  width: 948px;
   margin: 0 auto;
   overflow: hidden;
   padding: 50px 0;
@@ -495,10 +513,6 @@ footer {
   padding-bottom: 30px;
   border-bottom: 1px solid #f7f7f7;
   margin-bottom: 30px;
-}
-
-.blogfootdiv2 {
-
 }
 
 footer hr {
