@@ -231,6 +231,7 @@ banner {
   margin: 0 auto;
   height: 567px;
   background: url(../images/bridge_bg.jpg) no-repeat;
+  background-size: cover;
   position: relative;
   border-bottom: 4px solid #24292d;
 }
