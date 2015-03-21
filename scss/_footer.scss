@@ -1,0 +1,114 @@
+
+footer {
+  clear: both;
+  background: url(../images/footerbg.png) repeat;
+  border: 6px solid #cccccc;
+}
+
+.footer_container {
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+.footer_box {
+  float: left;
+  width: 237px;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-right: 30px;
+}
+
+.footer_box h2 {
+  border: none;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+
+.footer_box h3 {
+  font-size: 12px;
+}
+
+.footer_box img {
+  float: left;
+  margin-right: 20px;
+  width: 61px;
+  height: 64px;
+}
+
+.blogfootdiv1 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 30px;
+}
+
+footer hr {
+  width: 222px;
+  margin-right: 13px;
+  border: #f7f7f7 solid 1px;
+}
+
+.blogfootdiv p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.about_toptext {
+  color: #ef5b32;
+  margin-bottom: 30px;
+}
+
+footer ul {
+   margin: 0;
+   list-style: none;
+   padding-left: 0;
+   padding-right: 0;
+}
+
+footer ul li {
+  padding: 0;
+  background: url(../images/ul_img.png) no-repeat;
+  padding-left: 15px;
+  background-position: 0px center;
+  width: 197px;
+  line-height: 25px;
+}
+
+footer a {
+ text-decoration: none;
+  font-size: 12px;
+  color: #24292d;
+}
+
+.social {
+  list-style: none;
+}
+
+.twit, .rss, .google {
+  height: 50px;
+  padding-left: 78px;
+  display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f7f7f7;
+  cursor: pointer;
+}
+
+.twit {
+  background: url(../images/twit_logo.gif) no-repeat;
+  margin-top: 0;
+}
+
+.rss {
+  background: url(../images/rss_logo.gif) no-repeat;
+}
+
+.google {
+  background: url(../images/plus_logo.gif) no-repeat;
+}
+
+.social a {
+  display: block;
+  line-height: 50px;
+}

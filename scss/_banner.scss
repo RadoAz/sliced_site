@@ -1,0 +1,65 @@
+banner {
+  width: 100%;
+}
+
+.bannerdiv {
+  margin: 0 auto;
+  height: 567px;
+  background: url(../images/bridge_bg.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  border-bottom: 4px solid #24292d;
+}
+
+.banner_ribbon {
+  width: 100%;
+  height: 67px;
+  background-color: rgba(0,0,0,.9);
+  position: absolute;
+  bottom: 0;
+  color: #ffffff;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+.banner_ribbon_content {
+  width: 840px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner_ribbon_content p {
+  color: #ffffff;
+}
+
+.round_arrow_left, .banner_ribbon h2, .banner_ribbon p {
+  float: left;
+}
+
+.banner_ribbon_content > .round_arrow_right {
+  float: right;
+  margin: 0;
+}
+
+.round_arrow_left, .round_arrow_right {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #25292d;
+  border-radius: 17px;
+  background-color: #25292d;
+  color: #ffffff;
+}
+
+.banner_ribbon p {
+  font-size: 11px;
+  line-height: 32px;
+  margin-left: 40px;
+}
+
+.round_arrow_right {
+  margin-left: 70px;
+}
+
+.banner_ribbon a, .red_arr {
+  color: #f53600;
+}

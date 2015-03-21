@@ -1,0 +1,36 @@
+@font-face {
+ font-family: 'MyriadPro_Condensed';
+ src: url(../fonts/MyriadPro-Cond.otf);
+}
+
+body {
+  width: 100%;
+  background: url(../images/mainbg.png) repeat;
+}
+
+p {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 12px;
+  color: #69757f;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.container-width {
+  width: 948px;
+}
+
+h2 {
+  font-family: 'MyriadPro_Condensed';
+  font-size: 25px;
+  letter-spacing: 1px;
+  padding: 5px 45px 0 70px;
+  border-right: 1px solid #666564;
+}
