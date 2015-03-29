@@ -1,10 +1,32 @@
-header, banner, article, aside, footer, button {
-  display: block;
-  font-family: Arial; }
-
-html, body, p, h1, h2, h3, a, div, img, input {
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 @font-face {
   font-family: 'MyriadPro_Condensed';
@@ -43,155 +65,128 @@ header {
   height: 103px;
   padding: 12px 0;
   width: 100%; }
-
-.headerdiv {
-  margin: 0 auto; }
-
-header img {
-  float: left; }
-
-.headerdiv > ul {
-  list-style-type: none;
-  margin: 0 0 0 30px; }
-
-.headerdiv > ul > li {
-  float: left;
-  font-size: 11px;
-  line-height: 14px;
-  margin: 20px 5px;
-  position: relative; }
-
-.headerdiv > ul > li:after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 50px;
-  background-color: #2d3135;
-  display: block;
-  top: -7px;
-  left: -5px; }
-
-.headerdiv > ul > li:first-child:after {
-  display: none; }
-
-.headerdiv > ul > li:last-child {
-  border: none; }
-
-.headerdiv > ul > li.dropdown {
-  height: 35px; }
-
-.headerdiv > ul > li.dropdown > a {
-  background-image: url(../images/menu_arr_down.png);
-  background-repeat: no-repeat;
-  background-position: 85% center;
-  padding-right: 30px; }
-
-.headerdiv > ul > li.dropdown:hover > a {
-  background-color: #24292d; }
-
-.headerdiv > ul > li a {
-  display: block;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 8px 20px;
-  border-radius: 15px; }
-
-.headerdiv > ul > li > a:hover {
-  background-color: #24292d; }
-
-.headerdiv > ul > li.active > a {
-  background-color: #f53600; }
-
-.headerdiv > ul > li.dropdown:hover .line_menu_2 {
-  display: block; }
-
-.headerdiv > ul > li.dropdown .line_menu_2 {
-  width: 150px;
-  position: absolute;
-  top: 34px;
-  left: -26px;
-  list-style: none;
-  padding: 0;
-  z-index: 2;
-  border-radius: 4px 4px 0 0;
-  border-top: red 8px solid;
-  display: none; }
-
-.headerdiv > ul > li.dropdown .line_menu_2:before {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 7px 7px 7px;
-  border-color: transparent transparent red transparent;
-  position: absolute;
-  top: -13px;
-  left: 50%;
-  z-index: 1;
-  margin-left: -5px; }
-
-.headerdiv > ul > li.dropdown .line_menu_2 > li:first-child {
-  border-radius: 4px 4px 0 0; }
-
-.headerdiv > ul > li.dropdown .line_menu_2 > li {
-  width: 150px;
-  padding: 15px 0;
-  background-color: #24292d;
-  position: relative;
-  top: -4px; }
-
-.headerdiv > ul > li.dropdown .line_menu_2 > li > a {
-  text-transform: uppercase;
-  text-align: center;
-  width: 100px;
-  margin: 0 auto; }
-
-.line_menu_2 li a:hover {
-  background-color: red; }
-
-.dropdown2 > a {
-  background: url(../images/menu_arr_down.png) no-repeat;
-  background-position: 5px 12px; }
-
-.line_menu_3 {
-  width: 150px;
-  position: absolute;
-  top: 5px;
-  left: 3px;
-  list-style: none;
-  padding: 0;
-  z-index: 2;
-  border-radius: 4px 4px 0 0;
-  border-top: red 8px solid;
-  display: none;
-  z-index: 2; }
-
-.line_menu_3 li:first-child {
-  border-radius: 4px 4px 0 0; }
-
-.line_menu_3 li {
-  background-color: #24292d;
-  top: -4px;
-  position: relative;
-  padding: 15px 0; }
-
-.dropdown2:hover .transparent_menu_div, .line_menu_3 {
-  display: block; }
-
-.line_menu_3 li a {
-  width: 100px;
-  margin: 0 auto;
-  text-align: center; }
-
-.transparent_menu_div {
-  position: absolute;
-  width: 157px;
-  height: 250px;
-  top: 15px;
-  left: -157px;
-  z-index: 3;
-  display: none; }
+  header .headerdiv {
+    margin: 0 auto; }
+    header .headerdiv img {
+      float: left; }
+    header .headerdiv > ul {
+      list-style-type: none;
+      margin: 0 0 0 30px; }
+      header .headerdiv > ul > li {
+        float: left;
+        font-size: 11px;
+        line-height: 14px;
+        margin: 20px 5px;
+        position: relative; }
+      header .headerdiv > ul > li:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 50px;
+        background-color: #2d3135;
+        display: block;
+        top: -7px;
+        left: -5px; }
+      header .headerdiv > ul > li:first-child:after {
+        display: none; }
+      header .headerdiv > ul > li:last-child {
+        border: none; }
+      header .headerdiv > ul > li.dropdown {
+        height: 35px; }
+      header .headerdiv > ul > li.dropdown > a {
+        background-image: url(../images/menu_arr_down.png);
+        background-repeat: no-repeat;
+        background-position: 85% center;
+        padding-right: 30px; }
+      header .headerdiv > ul > li.dropdown:hover > a {
+        background-color: #24292d; }
+      header .headerdiv > ul > li a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 8px 20px;
+        border-radius: 15px; }
+      header .headerdiv > ul > li > a:hover {
+        background-color: #24292d; }
+      header .headerdiv > ul > li.active > a {
+        background-color: #f53600; }
+      header .headerdiv > ul > li.dropdown:hover .line_menu_2 {
+        display: block; }
+      header .headerdiv > ul > li.dropdown .line_menu_2 {
+        width: 150px;
+        position: absolute;
+        top: 34px;
+        left: -26px;
+        list-style: none;
+        padding: 0;
+        z-index: 2;
+        border-radius: 4px 4px 0 0;
+        border-top: red 8px solid;
+        display: none; }
+      header .headerdiv > ul > li.dropdown .line_menu_2:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 7px 7px 7px;
+        border-color: transparent transparent red transparent;
+        position: absolute;
+        top: -13px;
+        left: 50%;
+        z-index: 1;
+        margin-left: -5px; }
+      header .headerdiv > ul > li.dropdown .line_menu_2 > li:first-child {
+        border-radius: 4px 4px 0 0; }
+      header .headerdiv > ul > li.dropdown .line_menu_2 > li {
+        width: 150px;
+        padding: 15px 0;
+        background-color: #24292d;
+        position: relative;
+        top: -4px; }
+      header .headerdiv > ul > li.dropdown .line_menu_2 > li > a {
+        text-transform: uppercase;
+        text-align: center;
+        width: 100px;
+        margin: 0 auto; }
+    header .headerdiv .line_menu_2 li a:hover {
+      background-color: red; }
+    header .headerdiv .dropdown2 > a {
+      background: url(../images/menu_arr_down.png) no-repeat;
+      background-position: 5px 12px; }
+    header .headerdiv .line_menu_3 {
+      width: 150px;
+      position: absolute;
+      top: 5px;
+      left: 3px;
+      list-style: none;
+      padding: 0;
+      z-index: 2;
+      border-radius: 4px 4px 0 0;
+      border-top: red 8px solid;
+      display: none;
+      z-index: 2; }
+    header .headerdiv .line_menu_3 li:first-child {
+      border-radius: 4px 4px 0 0; }
+    header .headerdiv .line_menu_3 li {
+      background-color: #24292d;
+      top: -4px;
+      position: relative;
+      padding: 15px 0; }
+    header .headerdiv .dropdown2:hover .transparent_menu_div, header .headerdiv .line_menu_3 {
+      display: block; }
+    header .headerdiv .line_menu_3 li a {
+      width: 100px;
+      margin: 0 auto;
+      text-align: center; }
+    header .headerdiv .transparent_menu_div {
+      position: absolute;
+      width: 157px;
+      height: 250px;
+      top: 15px;
+      left: -157px;
+      z-index: 3;
+      display: none; }
 
 banner {
   width: 100%; }
